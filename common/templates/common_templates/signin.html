@@ -1,0 +1,74 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{% static 'css/signinstyle.css' %} ">
+    
+</head>
+<body>
+    <div class="container" >
+        
+        <div class="header">
+            <div class="logo">
+                <a href="{% url 'common:common_index' %}">
+                <img src="static/images/logo2.png" height="100%" width="70%" no-repeat >
+                </a>
+            </div>
+            <div class="language">
+                <form method="get">
+                <select name="language" multiple size="1">
+                    <!--size here used to show size of list displayed-->
+                    <option selected>English</option>
+                    <option>Hindi</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Malayalam</option>
+                </select>
+                </form>
+            </div>
+        </div>
+        
+
+        <div class="container1">
+            <div>
+            <img src="static/images/bg1.jpg" alt="bg1" height="700px" width="100%">
+            </div>
+            <div class="shade">
+            </div>
+            <div class="content1">
+                <h1>Sign In</h1><br />
+                <form method="get" action="{% url 'common:customer_home' %}">                    
+                    <input name="username" type="text" placeholder="Email or Phone number" size="40"/><br /><br />
+                    <input type="password" placeholder="Password" size="40"/><br />
+                    <h4><input type="checkbox" />Remember me</h4>
+                    <div class="signin">
+                    <a href="{% url 'common:customer_home' %}"><h3>Sign In</h3></a>
+                    </div>
+                    <div class="signin_learnmore">
+                    <h3>New to Netflix?<a href="{% url 'common:common_signup' %}"> Sign up </a>now.</h3>
+                    <h4>This page is protected by Google reCAPTCHA <br />
+                        to ensure you're not a bot. Learn more.</h4>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="footer">
+                <div class="indexfaqs"><a href="{% url 'common:common_faqs' %}">FAQs</a></div>
+                <div class="indexcontact"><a href="{% url 'common:common_contact' %}">Contact Us</a></div>
+                <div class="privacy">Privacy</div>
+                <div class="career">Career</div>
+                <div class="legalnotes">Legal notes</div>
+                <div class="indexterms">Terms of Use</div>
+                
+            </div>
+                
+        </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="{% static 'css/indexstyle.css' %} ">
+    
+    
+</head>
+<body>
+    <div class="container" >
+        
+        <div class="header">
+            <div class="logo">
+                <a href="{% url 'common:common_index' %}">
+                <img src="static/images/logo2.png" height="100%" width="70%" no-repeat >
+                </a>
+            </div>
+            <div class="language">
+                <form method="get">
+                <select name="language" multiple size="1">
+                    <!--size here used to show size of list displayed-->
+                    <option selected>English</option>
+                    <option>Hindi</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Malayalam</option>
+                </select>
+                </form>
+            </div>
+            <div class="signin">
+                <a href="{% url 'common:common_signin' %}">Sign In</a>
+            </div>
+        </div>
+        
+
+        <div class="container1">
+            <div>
+            <img src="static/images/bg1.jpg" alt="bg1" height="700px" width="100%">
+            </div>
+            <div class="shade">
+            </div>
+            <div class="index_content1">
+                <h1> movies, TV shows and more.<br />
+                Watch anywhere. Cancel anytime.<br />
+                </h1>
+                <h4>Ready to watch? Enter your email to create or restart your membership.
+                </h4>
+                <form method="get">
+                    <div>
+                        <div class="index_email" >
+                            <input name="email" type="text" placeholder="Enter your Email Address" size="60"/>
+                        </div>
+                        <div class="index_email_submit">
+                        <label><a href="{% url 'common:common_signin' %}">Get Started  ></a></label>
+                        </div>
+
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="index_content2">
+                Enjoy on your TV.<br /><br />
+                Watch on smart TVs, PlayStation, Xbox, <br />
+                Chromecast, Apple TV, Blu-ray players and more.
+            </div>
+            
+            <div class="indextvimage">
+                <img src="static/images/indextvimage.jpg" alt="indextvimage" height=300px width=480px >  
+            </div>
+
+            <div class="indeximage2">
+                <img src="static/images/indeximage2.png" alt="indeximage2" height=auto width=auto >
+            </div>
+        </div>
+
+        <div class="container3">
+
+            <div class="indeximage3">
+                <img src="static/images/indeximage3.jpg" alt="indeximage3" height=auto width=auto >
+            </div>
+
+            <div class="index_content3">
+                <h1>Download your shows <br />
+                    to watch offline.<br />
+                </h1>
+                <h3>
+                    Save your favourites easily and always<br />
+                    have something to watch.
+                </h3>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="indexfaqs"><a href="{% url 'common:common_faqs' %}">FAQs</a></div>
+            <div class="indexcontact"><a href="{% url 'common:common_contact' %}">Contact Us</a></div>
+            <div class="privacy">Privacy</div>
+            <div class="career">Career</div>
+            <div class="legalnotes">Legal notes</div>
+            <div class="indexterms">Terms of Use</div>
+            
+        </div>   
+
+    </div>
+</body>
+</html>

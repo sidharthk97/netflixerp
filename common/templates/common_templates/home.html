@@ -1,0 +1,147 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{% static 'css/customer_homestyle.css' %} ">
+    
+</head>
+<body>
+    <div class="container" >
+        
+        <div class="header">
+            <div class="logo">
+                <a href="{% url 'common:common_index' %}">
+                <img src="static/images/logo2.png" height="100%" width="70%" no-repeat >
+                </a>
+            </div>
+            <div class="language">
+                <form method="get">
+                <select name="language" multiple size="1">
+                    <!--size here used to show size of list displayed-->
+                    <option selected>English</option>
+                    <option>Hindi</option>
+                    <option>French</option>
+                    <option>German</option>
+                    <option>Malayalam</option>
+                </select>
+                </form>
+            </div>
+            
+        </div>
+        
+
+        <div class="container1">
+            
+            <img src="static/images/bg1.jpg" alt="bg1" height="1450px" width="100%">
+            
+            <div class="content1">
+                <div class="movietitle">
+                    <label> Movies for you</label>
+                </div>
+
+                <div class="movie1">
+                    <div><img src="static/images/movie1.png" alt="movie1" width="100%"></div>
+                    <div>Kabhi Khushi Kabhie Gham</div>
+                </div>
+
+                <div class="movie2">
+                    <div><img src="static/images/movie2.png" alt="movie2" width="100%"></div>
+                    <div>Ponniyin Selvan-1</div>
+                </div>
+
+                <div class="movie3">
+                    <div><img src="static/images/movie3.png" alt="movie3" width="100%"></div>
+                    <div>Lucifer</div>
+                </div>
+
+                <div class="movie4">
+                    <div><img src="static/images/movie4.png" alt="movie4" width="100%"></div>
+                    <div>Kuch Kuch Hota Hai</div>
+                </div>
+
+                <div class="movie5">
+                    <div><img src="static/images/movie5.png" alt="movie5" width="100%"></div>
+                    <div>Kantara</div>
+                </div>
+
+                <div class="movie6">
+                    <div><img src="static/images/movie6.png" alt="movie6" width="100%"></div>
+                    <div>Harry Potter-5</div>
+                </div>
+
+                <div class="movie7">
+                    <div><img src="static/images/movie7.png" alt="movie7" width="100%"></div>
+                    <div>K.G.F Chapter-2</div>
+                </div>
+
+                <div class="movie8">
+                    <div><img src="static/images/movie8.png" alt="movie8" width="100%"></div>
+                    <div>Kungfu Panda-3</div>
+                </div>
+
+                <div class="movie9">
+                    <div><img src="static/images/movie9.png" alt="movie9" width="100%"></div>
+                    <div>Fast & Furious 9</div>
+                </div>
+
+                <div class="movie10">
+                    <div><img src="static/images/movie10.png" alt="movie10" width="100%"></div>
+                    <div>Tiger zinda hai</div>
+                </div>
+
+                <div class="movie11">
+                    <div><img src="static/images/movie11.png" alt="movie11" width="100%"></div>
+                    <div>Drishyam-2</div>
+                </div>
+
+                <div class="movie12">
+                    <div><img src="static/images/movie12.png" alt="movie12" width="100%"></div>
+                    <div>Chak De! India</div>
+                </div>
+
+                <div class="movie13">
+                    <div><img src="static/images/movie13.png" alt="movie13" width="100%"></div>
+                    <div>San Andreas</div>
+                </div>
+
+                <div class="movie14">
+                    <div><img src="static/images/movie14.png" alt="movie14" width="100%"></div>
+                    <div>Niram</div>
+                </div>
+
+                <div class="movie15">
+                    <div><img src="static/images/movie15.png" alt="movie15" width="100%"></div>
+                    <div>Mission Impossible: Fallout</div>
+                </div>
+
+                <div class="movie16">
+                    <div><img src="static/images/movie16.png" alt="movie16" width="100%"></div>
+                    <div>Interstellar</div>
+                </div>
+
+                <div class="moviemore">
+                    <div>More Movies </div>
+                </div>
+                
+            </div>
+            <div class="footer">
+                <div class="indexfaqs"><a href="{% url 'common:common_faqs' %}">FAQs</a></div>
+                <div class="indexcontact"><a href="{% url 'common:common_contact' %}">Contact Us</a></div>
+                <div class="privacy">Privacy</div>
+                <div class="career">Career</div>
+                <div class="legalnotes">Legal notes</div>
+                <div class="indexterms">Terms of Use</div>
+                
+            </div>
+           
+                
+        </div>
+    </div>
+</body>
+</html>
